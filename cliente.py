@@ -112,5 +112,77 @@ if __name__ == "__main__":
 
          print("\n Que tengas un buen dia, si deseas realizar otra operacion ejecute de nuevo el cliente. ")
          break
+
+      elif opcion == "3":
+         # Llamamos la funcion que nos enterga los numeros digitados
+         numero1, numero2 = digitarNumero()
+
+         # Llamamos la funcion conexion con Servidor Intermedio
+         nuevoHost, nuevoPuerto = conexionSerInter(opcion)
+         print("\nLa direccion del servidor multiplicacion es: ", nuevoHost, nuevoPuerto)
+
+         # Llamamos la funcion conexion con Servidor Final
+         resultadoMulti = conexionSerFinal(
+             numero1, numero2, nuevoHost, nuevoPuerto)
+         print("\nNumero 1 = ", numero1, ", Numero 2 = ",
+               numero2, ", Operacion = ", opcion)
+         print("\nEl resultado de la multiplicacion es =", resultadoMulti)
+
+         print("\n Que tengas un buen dia, si deseas realizar otra operacion ejecute de nuevo el cliente. ")
+         break
+
+      elif opcion == "4":
+         # Llamamos la funcion que nos enterga los numeros digitados
+         numero1, numero2 = digitarNumero()
+
+         # Llamamos la funcion conexion con Servidor Intermedio
+         nuevoHost, nuevoPuerto = conexionSerInter(opcion)
+         print("\nLa direccion del servidor division es: ", nuevoHost, nuevoPuerto)
+
+         # Llamamos la funcion conexion con Servidor Final
+         resultadoDiv = conexionSerFinal(
+             numero1, numero2, nuevoHost, nuevoPuerto)
+         print("\nNumero 1 = ", numero1, ", Numero 2 = ",
+               numero2, ", Operacion = ", opcion)
+         print("\nEl resultado de la division es =", resultadoDiv)
+
+         print("\n Que tengas un buen dia, si deseas realizar otra operacion ejecute de nuevo el cliente. ")
+         break
+
+      elif opcion == "5":
+         # Llamamos la funcion que nos enterga los numeros digitados
+         numero1, numero2 = digitarNumero()
+
+         # Llamamos la funcion conexion con Servidor Intermedio
+         nuevoHost, nuevoPuerto = conexionSerInter(opcion)
+         print("\nLa direccion del servidor potenciacion es: ", nuevoHost, nuevoPuerto)
+
+         # Llamamos la funcion conexion con Servidor Final
+         resultadoPot = conexionSerFinal(
+             numero1, numero2, nuevoHost, nuevoPuerto)
+         print("\nNumero 1 = ", numero1, ", Numero 2 = ",
+               numero2, ", Operacion = ", opcion)
+         print("\nEl resultado de la potenciacion es =", resultadoPot)
+
+         print("\n Que tengas un buen dia, si deseas realizar otra operacion ejecute de nuevo el cliente. ")
+         break 
+
+      elif opcion == "6":
+         # Llamamos la funcion que nos enterga los numeros digitados
+         numero1, numero2 = digitarNumero()
+
+         # Llamamos la funcion conexion con Servidor Intermedio
+         nuevoHost, nuevoPuerto = conexionSerInter(opcion)
+         print("\nLa direccion del servidor logaritmo es: ", nuevoHost, nuevoPuerto)
+
+         # Llamamos la funcion conexion con Servidor Final
+         resultadoLog = conexionSerFinal(
+             numero1, numero2, nuevoHost, nuevoPuerto)
+         print("\nNumero 1 = ", numero1, ", Numero 2 = ",
+               numero2, ", Operacion = ", opcion)
+         print("\nEl resultado del logaritmo es =", resultadoLog)
+
+         print("\n Que tengas un buen dia, si deseas realizar otra operacion ejecute de nuevo el cliente. ")
+         break
       else:
          pass
