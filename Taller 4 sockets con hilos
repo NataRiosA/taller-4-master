@@ -1,0 +1,32 @@
+Realizar un sistema cliente/servidor que tenga las siguientes características:
+
+1. Construir un cliente que permita solicitar la respuesta a un servidor intermedio
+
+de una de las siguientes operaciones matemáticas: 
+
+suma, resta, multiplicación, división, potenciación, logaritmación.
+
+2. El servidor intermedio recibe la petición del cliente, busca la dirección del
+
+servidor de la operación que se solicita y se la envía al cliente.
+
+3. El cliente se conecta de manera directa al servidor específico que va a 
+
+realizar la operación y le hace la solicitud para que realice la operación.
+
+4. El servidor específico devuelve el resultado al cliente.
+
+5. Cada vez que el servidor específico se ejecute, debe enviar la información
+de servicio, dirección y puerto al servidor intermedio. El servidor intermedio
+
+solo tiene la dirección y puerto de cada servicio cuando se le es enviado
+
+desde cada servidor específico.
+
+6. Para la interacción cliente / servidor se deben utilizar hilos.
+
+
+
+Se debe enviar un solo archivo .zip en donde estén comprimidos
+
+todos los archivos generados.
